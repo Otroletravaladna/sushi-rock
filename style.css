@@ -1,0 +1,28 @@
+header{
+    background-color: #000000;
+    height: 10vh;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    gap: .5rem
+}
+
+section{
+    display: flex;
+}
+
+#side{
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.categories{
+    background-color: #fff;
+}
+
+.content-head{
+    background-color: #ffc107;
+    height: 10vh;
+    color: #fff;
+}
+
