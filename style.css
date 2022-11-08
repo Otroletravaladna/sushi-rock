@@ -1,3 +1,11 @@
+:root{
+    --sushi-yellow: #ffc107;
+}
+
+body{
+    margin: 0;
+}
+
 header{
     background-color: #000000;
     height: 10vh;
@@ -9,20 +17,36 @@ header{
 
 section{
     display: flex;
+    
 }
 
+.content{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*set min() ch in width of side and some vw size*/
+
 #side{
-    background-color: #ffc107;
+    background-color: var(--sushi-yellow);
     color: #fff;
+    width: 20vw;
+    height: 100vh;
 }
 
 .categories{
     background-color: #fff;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-transform: uppercase;
 }
 
 .content-head{
-    background-color: #ffc107;
+    background-color: var(--sushi-yellow);
     height: 10vh;
     color: #fff;
 }
 
+a{
+    text-decoration: none; 
+}
