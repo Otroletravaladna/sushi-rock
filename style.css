@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
 :root{
     --sushi-yellow: #ffc107;
+    --font:'Roboto', sans-serif;
 }
 
 body{
     margin: 0;
+    font-family: var(--font, sans-serif);
 }
 
 header{
@@ -22,7 +27,7 @@ section{
 
 .content{
     width: 100vw;
-    height: 100vh;
+    height: 100vh;  
 }
 
 /*set min() ch in width of side and some vw size*/
@@ -30,29 +35,37 @@ section{
 #side{
     background-color: var(--sushi-yellow);
     color: #fff;
-    width: 20vw;
+    width: min(22vw, 30ch);
     height: 100vh;
+}
+
+#side>ul>li{
+    list-style: none;
+    margin: 2rem 0 0;
+    letter-spacing: 1px;
 }
 
 .categories{
     background-color: #fff;
     margin-top: 1.5rem;
     display: grid;
-    gap: 1.5rem;
+    gap: 2.5rem;
     grid-template-columns: max-content max-content max-content;
     text-transform: uppercase;
-    justify-content: center;
+    justify-content: space-evenly;
+    
 }
 
 .categories > div{
     display: flex;
-    height: 20vh;
-    width: 25vw;
-    padding: 0;
+    height: 15vh;
+    width: 22vw;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    
+    text-align: center;
+    font-weight: bold;
+    font-size: min(20px, 2vw);
 }
 
 .categories > div:nth-child(1){
@@ -93,9 +106,14 @@ section{
 }
 
 .content-head{
+    display: flex;
     background-color: var(--sushi-yellow);
     height: 10vh;
     color: #fff;
+    align-items: center;
+    font-size: min(4vw, 40px);
+    padding: 1.2rem;
+    font-weight: bold;
 }
 
 a{
