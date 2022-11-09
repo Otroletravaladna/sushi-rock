@@ -36,9 +36,60 @@ section{
 
 .categories{
     background-color: #fff;
+    margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: auto auto auto;
+    gap: 1.5rem;
+    grid-template-columns: max-content max-content max-content;
     text-transform: uppercase;
+    justify-content: center;
+}
+
+.categories > div{
+    display: flex;
+    height: 20vh;
+    width: 25vw;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+}
+
+.categories > div:nth-child(1){
+    background: url(images/empanaditas.png);
+    background-size: 300px 400px;
+}
+
+.categories > div:nth-child(2){
+    background: url(images/gohan.jpg);
+}
+
+.categories > div:nth-child(3){
+    background: url(images/combos.jpg)
+}
+
+.categories > div:nth-child(4){
+    background: url(images/variedades.jpg);
+}
+
+.categories > div:nth-child(5){
+    background: url(images/barco.jpg);
+}
+
+.categories > div:nth-child(6){
+    background: url(images/ramen.png);
+}
+
+.categories > div:nth-child(7){
+    background: url(images/vinos1.jpg);
+}
+
+.categories > div:nth-child(8){
+    background: url(images/rayo-bny.jpg);
+}
+
+.categories > div:nth-child(9){
+    background: url(images/extras.png);
 }
 
 .content-head{
@@ -49,4 +100,5 @@ section{
 
 a{
     text-decoration: none; 
+    color: #fff;
 }
