@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
 
 :root{
     --sushi-yellow: #ffc107;
@@ -37,6 +44,10 @@ section{
     color: #fff;
     width: min(22vw, 30ch);
     height: 100vh;
+}
+
+#side>ul{
+    padding: .5rem;
 }
 
 #side>ul>li{
