@@ -34,10 +34,12 @@ section{
 
 .content{
     width: 100vw;
-    height: 100vh;  
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15% 85%;
 }
 
-/*set min() ch in width of side and some vw size*/
+
 
 #side{
     background-color: var(--sushi-yellow);
@@ -45,6 +47,15 @@ section{
     width: min(22vw, 30ch);
     height: 100vh;
 }
+
+.side-visible {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.side-hidden {
+    display: none;
+} 
 
 #side>ul{
     padding: .5rem;
@@ -130,4 +141,11 @@ section{
 a{
     text-decoration: none; 
     color: #fff;
+}
+
+.icon {
+    background: no-repeat  url(images/perfil.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
 }
